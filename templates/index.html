@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Suggestion App</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Suggestion App</h1>
+        <form action="/suggest" method="post">
+            <label for="movieInput">Enter a Movie Name:</label>
+            <input type="text" id="movieInput" name="movie" required>
+            <button type="submit">Get Movie Suggestions</button>
+        </form>
+
+        <div id="resultContainer" class="result-container">
+            {% if suggestions %}
+                <h2>Suggested Movies:</h2>
+                <pre>{{ suggestions }}</pre>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Suggestion App</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Suggestion App</h1>
+        <form action="/" method="post">
+            <label for="movie">Enter a Movie Name:</label>
+            <input type="text" id="movie" name="movie" required>
+            <button type="submit">Get Movie Suggestions</button>
+        </form>
+
+        <div class="result-container">
+            {% if suggestions %}
+                <h2>Suggested Movies:</h2>
+                <pre>{{ suggestions }}</pre>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px; /* Increase font size */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result-container {
+    margin-top: 20px;
+    max-height: 300px; /* Limit height */
+    overflow-y: auto;  /* Scroll if content is too long */
+    padding: 15px;     /* Add padding for better readability */
+    background-color: #e9ecef;
+    border-radius: 5px;
+    white-space: pre-wrap; /* Text wraps within container */
+    line-height: 1.6;  /* Increase line height for readability */
+    font-size: 16px;   /* Adjust font size */
+    color: #333;       /* Darker text color for better contrast */
+}
+
+pre {
+    white-space: pre-wrap; /* Wrap text */
+    word-wrap: break-word; /* Break long words */
+    margin: 0; /* Remove extra margins */
+}
